@@ -1,129 +1,343 @@
-/* main.css */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700%7CRoboto+Slab:400,700');
 
-/* These are the colors and fonts used throughout the webpage.
- * I've listed them here so that a user may easily
- * do a search-and-replace for these to change the site theme.
- *   'Roboto',sans-serif; Font for the title text
- *   'Roboto-Slab',serif; Font for the body text 
- *   #fafafa; Background color of the site
- *   #505050; Foreground (text) color of the site
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
- *   #b2132e; Reddish, "Conference" in the logo, hover color for links
- *   #813c54; Heading color, titles in the Program
- *   #b8860b; Dark Goldenrod, color for links
- */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
-
-*{
-    border:0;
-    font:inherit;
-    font-size:1em;
-    margin:0;
-    padding:0;
-    vertical-align:baseline;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: #fafafa;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #505050; 
-    text-align:left;
-    font-family:'Roboto',sans-serif;
-    font-size:1em;
-    line-height:1.5em;
-    margin: 60px auto;
-    width: 1000px;
+body {
+    background: #f7f8fb;
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 32px auto 56px auto;
+    max-width: 1120px;
+    padding: 0 20px;
 }
 
-a{color: #b8860b; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-h1{font-size:2.67em;}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
-h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
-li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
-i,em{font-style:italic;}
-b,strong{font-weight:bold;}
-sup{
-    vertical-align: super;
-    font-size: 0.8em;
-    line-height: 0;
-}
-sub{
-    vertical-align: sub;
-    font-size: 0.8em;
-    line-height: 0;
-}
-table{
-    width: 1000px;
-    margin: 12px auto 24px auto;
-    float: center;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
-}
-th,td{
-    text-align: left;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
+a {
+    color: #0f6ab4;
+    text-decoration: none;
 }
 
-/* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
-
-/* Conference Title Logo */
-.title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
-.year{color: #505050; font-size:0.67em; font-weight: lighter;}
-
-/* Navigation Links (Home, Registration, etc) */
-table.navigation{width:800px;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-
-/* Sponsor Images */
-table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
-
-/* The Table on the Program Page */
-td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
-td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
-td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
-td.abstract img{display: block; margin: 4px auto 8px auto}
-table.plenary{padding-top: 8px; background: #ffffff;}
-
-/* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
-iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
-img.center{display:block; width:67%; margin:1em auto 2em auto;}
-
-/* Flyer Images */
-table.flyers{width:800px;}
-td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
-
-footer{font-size:0.875em; margin-top:12em; text-align:center;}
-
-/* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
-    h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
-    td.date{font-size:1em; padding-top:0.5em;}
-    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
-    table.footer{font-size:0.33em;}
+a:hover,
+a:focus {
+    color: #a72045;
 }
 
+a.current {
+    color: #102c57;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4 {
+    color: #102c57;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 8px;
+}
+
+p,
+ul {
+    margin: 18px 0;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+section {
+    margin: 24px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.banner {
+    border-radius: 24px;
+    margin-bottom: 28px;
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 18px 40px rgba(10, 24, 51, 0.18);
+}
+
+.compact-banner {
+    min-height: 320px;
+}
+
+.banner img {
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner-overlay {
+    background: linear-gradient(135deg, rgba(7, 18, 38, 0.82), rgba(15, 106, 180, 0.45));
+    color: #ffffff;
+    inset: 0;
+    padding: 42px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.eyebrow {
+    color: #dbe9ff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: #ffffff;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin: 10px 0 12px 0;
+    max-width: 760px;
+}
+
+.banner-meta {
+    color: #f7faff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hero-copy {
+    margin-bottom: 28px;
+}
+
+.lead {
+    font-size: 1.15rem;
+    margin-top: 0;
+}
+
+table.navigation {
+    margin: 0 0 34px 0;
+    table-layout: fixed;
+}
+
+td.navigation {
+    background: #ffffff;
+    border: 1px solid #d9e1ee;
+    font-size: 1.05rem;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+td.navigation a {
+    display: block;
+}
+
+.info-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.info-card,
+.highlight-box {
+    background: #ffffff;
+    border: 1px solid #d9e1ee;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(16, 44, 87, 0.06);
+    padding: 24px;
+}
+
+.highlight-box h2,
+.highlight-box h3,
+.info-card h3 {
+    margin-top: 0;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.button {
+    background: #0f6ab4;
+    border-radius: 999px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 12px 20px;
+}
+
+.button:hover,
+.button:focus {
+    background: #0b568f;
+    color: #ffffff;
+}
+
+.button-secondary {
+    background: #ffffff;
+    border: 1px solid #0f6ab4;
+    color: #0f6ab4;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    background: #edf5fc;
+    color: #0b568f;
+}
+
+.program-day table {
+    background: #ffffff;
+    border: 1px solid #d9e1ee;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.program-day tr:not(:last-child) td {
+    border-bottom: 1px solid #eef2f7;
+}
+
+td.date {
+    color: #5b6573;
+    font-weight: 700;
+    padding: 16px 18px;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 120px;
+}
+
+td.title,
+td.title-special,
+td.abstract {
+    padding: 16px 18px;
+}
+
+td.title {
+    color: #102c57;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+td.title-special {
+    color: #0f6ab4;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+}
+
+td.abstract {
+    color: #394452;
+}
+
+iframe.directions {
+    border: none;
+    border-radius: 18px;
+    display: block;
+    height: 420px;
+    margin: 24px 0;
+    width: 100%;
+}
+
+table.flyers {
+    margin: 24px 0;
+}
+
+td.flyer {
+    background: #ffffff;
+    border: 1px solid #d9e1ee;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.single-flyer {
+    max-width: 900px;
+}
+
+td.flyer img {
+    border-radius: 12px;
+    display: block;
+}
+
+footer {
+    color: #5b6573;
+    font-size: 0.95rem;
+    margin-top: 56px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 18px auto 40px auto;
+        padding: 0 14px;
+    }
+
+    .banner,
+    .compact-banner {
+        min-height: 280px;
+    }
+
+    .banner-overlay {
+        padding: 24px;
+    }
+
+    table.navigation,
+    table.navigation tbody,
+    table.navigation tr {
+        display: block;
+    }
+
+    td.navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    td.date,
+    td.title,
+    td.title-special,
+    td.abstract {
+        display: block;
+        width: 100%;
+    }
+
+    td.date {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    iframe.directions {
+        height: 320px;
+    }
+}

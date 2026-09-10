@@ -1,69 +1,91 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
+    <meta name="description" content="Venue and travel information for the AI on HPC conference at the Bologna Tecnopolo.">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
+    <meta name="keywords" content="AI, HPC, Bologna Tecnopolo, directions, venue">
+    <title>Directions | AI on HPC</title>
 </head>
-
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
-        </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+    <div class="banner compact-banner">
+        <img src="assets/final.png" alt="AI on HPC conference visual">
+        <div class="banner-overlay">
+            <p class="eyebrow">MINERVA Conference</p>
+            <h1>AI on HPC</h1>
+            <p class="tagline">Bridging Supercomputing and Artificial Intelligence</p>
+            <p class="banner-meta">23–24 February 2027 · Bologna Tecnopolo</p>
         </div>
     </div>
 
-    <table class="navigation">
+    <table class="navigation" aria-label="Main navigation">
         <tr>
-            <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
+            <td class="navigation"><a title="Conference Home Page" href=".">Home</a></td>
+            <td class="navigation"><a title="Registration information" href="registration">Registration</a></td>
+            <td class="navigation"><a title="Conference Program" href="program">Program</a></td>
+            <td class="navigation"><a class="current" title="Directions to the Conference" href="directions">Directions</a></td>
+            <td class="navigation"><a title="Conference Flyer" href="flyer">Flyer</a></td>
         </tr>
     </table>
 
-
-    <h2>Directions</h2>
+    <h2>Venue</h2>
     <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
+        The conference will take place at the <strong>Bologna Tecnopolo</strong>, one of Europe&rsquo;s leading locations for supercomputing,
+        data-intensive research, and AI infrastructure activities.
     </p>
 
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
+    <section class="info-grid">
+        <div class="info-card">
+            <h3>Address</h3>
+            <p>
+                Bologna Tecnopolo<br>
+                Via Stalingrado 84/3<br>
+                40128 Bologna, Italy
+            </p>
+        </div>
+        <div class="info-card">
+            <h3>Conference dates</h3>
+            <p>
+                23–24 February 2027
+            </p>
+        </div>
+        <div class="info-card">
+            <h3>Registration</h3>
+            <p>
+                Participation is free of charge.
+                Registration will open soon on the <a target="_blank" rel="noopener noreferrer" href="https://minerva4ai.eu/">MINERVA website</a>.
+            </p>
+        </div>
+    </section>
 
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+    <iframe class="directions" title="Map to Bologna Tecnopolo" src="https://www.google.com/maps?q=Via%20Stalingrado%2084%2F3%2C%2040128%20Bologna%2C%20Italy&output=embed"></iframe>
+
+    <section>
+        <h2>Getting there</h2>
+        <ul>
+            <li><strong>From Bologna Centrale railway station:</strong> local public transport and taxis provide direct access to the Tecnopolo area.</li>
+            <li><strong>From Bologna Guglielmo Marconi Airport:</strong> the venue can be reached by taxi or by combining airport and city public transport connections.</li>
+            <li><strong>By car:</strong> Bologna Tecnopolo is located in the city and can be reached easily from the main road network around Bologna.</li>
+            <li><strong>Accommodation:</strong> attendees are encouraged to book accommodation in Bologna city, with convenient access to the venue by public transport or taxi.</li>
+        </ul>
+    </section>
+
+    <section class="highlight-box">
+        <h2>Practical information</h2>
+        <p>
+            Additional details about venue access, on-site registration, and logistical information will be published closer to the event.
+            For updates, follow the <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/minerva-european-support-centre-for-scalable-ai-research-and-deployment/">MINERVA LinkedIn page</a>.
+        </p>
+    </section>
 
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &copy; 2027 AI on HPC Conference · Organized by MINERVA
     </footer>
 
 </body>
