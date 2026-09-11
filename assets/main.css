@@ -109,7 +109,9 @@ table {
     justify-content: flex-end;
 }
 
-.banner-overlay h1 {
+.banner-overlay h1,
+.banner-overlay h2,
+.banner-overlay h3 {
     color: #ffffff;
     margin-bottom: 12px;
 }
