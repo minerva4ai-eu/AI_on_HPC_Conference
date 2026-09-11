@@ -320,6 +320,61 @@ td.flyer img {
     display: block;
 }
 
+.committee-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 24px 0;
+}
+
+.committee-card {
+    background: #ffffff;
+    border: 1px solid #d9e1ee;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(16, 44, 87, 0.06);
+    padding: 24px;
+}
+
+.committee-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.committee-photo {
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 18px;
+    object-fit: cover;
+    width: 150px;
+}
+
+.committee-photo-placeholder {
+    align-items: center;
+    background: linear-gradient(135deg, #dfe8f6, #edf3fb);
+    color: #5b6573;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.committee-role {
+    color: #0f6ab4;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.committee-bio {
+    margin: 0;
+}
+
+.committee-bio-placeholder {
+    color: #5b6573;
+    font-style: italic;
+}
+
 footer {
     color: #5b6573;
     font-size: 0.95rem;
@@ -358,7 +413,8 @@ footer {
         width: 100%;
     }
 
-    .info-grid {
+    .info-grid,
+    .committee-grid {
         grid-template-columns: 1fr;
     }
 
