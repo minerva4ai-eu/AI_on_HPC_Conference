@@ -322,8 +322,8 @@ td.flyer img {
 
 .committee-grid {
     display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin: 24px 0;
 }
 
@@ -332,7 +332,7 @@ td.flyer img {
     border: 1px solid #d9e1ee;
     border-radius: 18px;
     box-shadow: 0 10px 24px rgba(16, 44, 87, 0.06);
-    padding: 24px;
+    padding: 20px;
 }
 
 .committee-card h3 {
@@ -344,9 +344,10 @@ td.flyer img {
     aspect-ratio: 1 / 1;
     border-radius: 16px;
     display: block;
-    margin-bottom: 18px;
+    height: 120px;
+    margin: 0 auto 18px auto;
     object-fit: cover;
-    width: 150px;
+    width: 120px;
 }
 
 .committee-photo-placeholder {
@@ -413,9 +414,12 @@ footer {
         width: 100%;
     }
 
-    .info-grid,
-    .committee-grid {
+    .info-grid {
         grid-template-columns: 1fr;
+    }
+
+    .committee-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     td.date,
